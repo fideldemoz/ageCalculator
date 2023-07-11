@@ -1,0 +1,25 @@
+const today = new Date ();
+const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+class age {
+	constructor (date) {
+		this.bornDate = new Date(date);
+		this.bornYear = this.bornDate.getFullYear();
+		this.bornMonth = this.bornDate.getMonth();
+		this.bornDay = this.bornDate.getDate();
+	}
+}
+class diff {
+	constructor (userAge) {
+		this.Years = today.getFullYear() - userAge.bornYear;
+		this.Months = today.getMonth() - userAge.bornMonth;
+		this.Days = today.getDate() - userAge.bornDay;
+	}
+}
+
+const bY = 1999,
+bM = 'July',
+bD = 04;
+const myage = new age (`${bM}/${bD}/${bY}`);
+const result = new diff(myage);
+console.log(myage, result);
