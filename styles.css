@@ -34,8 +34,8 @@ body {
 	display: grid;
 	height: 100vh;
 	place-items: center;
-	font-size: 1.4rem;
-	background-color: var(--light-gray);
+	font-size: 32px;
+	background-color: var(--off-white);
 }
 main {
 	background-color: var(--white);
